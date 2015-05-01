@@ -1,0 +1,58 @@
+! Xresources file
+
+! urxvt enable copy & paste
+URxvt.pel-ext-common : default,keyboard-select,url-select,clipboard
+
+Urxvt.keysym.M-x	: perl:keyboard-select:activate
+Urxvt.keysym.M-u	: perl:url-select:select_next
+Urxvt.keysym.M-c	: perl:clipboard:copy
+Urxvt.keysym.M-v	: perl:clipboard:paste
+Urxvt.keysym.M-s	: perl:keyboard-select:search
+Urxvt.keysym.M-C-V	: perl:clipboard:paste_escaped
+
+! URxvt Transparent 
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 110
+
+! use iceweasel
+URxvt.url-select.launcher  : firefox
+URxvt.url-select.autocopy  : true
+URxvt.url-select.underline : true
+URxvt.urlLuncher:     /usr/bin/iceweasel
+
+! window size
+URxvt.geometry  : 100x40
+
+! Front size
+URxvt*font: xft:Monospace:pixelsize=12
+
+! blod Front size
+URxvt*boldFont: xft:Monospace:bold:pixelsize=12
+
+! URxvt mod Scrollbar
+URxvt.scrollStyle: plain
+URxvt*scrollBar: false
+
+! Font color green
+URxvt*foreground: green
+
+! Background color
+URxvt*background: black
+
+URxvt*color0:  #000000 // black
+URxvt*color1:  #B40000 // red
+URxvt*color2:  #00AA00 // green
+URxvt*color3:  #AAAA00 // yellow
+URxvt*color4:  #5555AA // blue
+URxvt*color5:  #AA00AA // magenta
+URxvt*color6:  #00AAAA // cyan
+URxvt*color7:  #AAAAAA // white
+URxvt*color8:  #555555 // black (now and below: bright)
+URxvt*color9:  #FF0000 // red
+URxvt*color10: #00FF00 // green
+URxvt*color11: #FFFF00 // yellow
+URxvt*color12: #6464FF // blue
+URxvt*color13: #FF00FF // magenta
+URxvt*color14: #00FFFF // cyan
+URxvt*color15: #FFFFFF // white
